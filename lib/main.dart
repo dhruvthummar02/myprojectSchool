@@ -12,6 +12,7 @@ import 'auth/loginpage.dart';
 import 'auth/pleshScreen.dart';
 import 'auth/students/firstresult.dart';
 import 'auth/students/homework.dart';
+import 'auth/students/payfees.dart';
 import 'auth/students/question_list.dart';
 import 'auth/students/student_login.dart';
 import 'teacherdas/techerlogin.dart';
@@ -24,7 +25,7 @@ void main() {
       ),
       title: "Done",
       debugShowCheckedModeBanner: false,
-      home:   const TeacherLogin (),
+      home:   const StudentLogin (),
     ),
   );
 }

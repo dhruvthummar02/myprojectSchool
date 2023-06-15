@@ -125,11 +125,12 @@ class _FirstRState extends State<FirstR> {
               ),
             ),
           ),
-          Center(
-            child: Container(
-              height: 143,
-              width: 324,
-              color: const Color(0xffC4C4C4),
+          Padding(
+            padding: const EdgeInsets.only(left:40,right: 40,),
+            child: Image.asset(
+              "assets/images/auth/ree.jpg",
+              height: 200,
+              width: 300,
             ),
           ),
           Center(

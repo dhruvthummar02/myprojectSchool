@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/auth/students/payfees.dart';
+import 'package:my_project/auth/students/sresulte.dart';
+
+import 'homework.dart';
 
 class StudentLogin extends StatefulWidget {
   const StudentLogin({Key? key}) : super(key: key);
@@ -305,18 +309,27 @@ class _StudentLoginState extends State<StudentLogin> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Container(
-                              padding: const EdgeInsets.all(20),
-                              decoration: const BoxDecoration(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(12),
+                            GestureDetector(
+                              onTap: (){
+                                /*Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) =>  const Shomework(),
+                                  ),
+                                );*/
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.all(20),
+                                decoration: const BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(12),
+                                  ),
+                                  color: Color(0xffA6F4E7),
                                 ),
-                                color: Color(0xffA6F4E7),
-                              ),
-                              child: Image.asset(
-                                "assets/images/auth/attendance.png",
-                                height: 60,
-                                width: 60,
+                                child: Image.asset(
+                                  "assets/images/auth/attendance.png",
+                                  height: 60,
+                                  width: 60,
+                                ),
                               ),
                             ),
                             const Padding(
@@ -346,18 +359,27 @@ class _StudentLoginState extends State<StudentLogin> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Container(
-                              padding: const EdgeInsets.all(20),
-                              decoration: const BoxDecoration(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(12),
+                            GestureDetector(
+                              onTap:(){
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) =>  const Shomework(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.all(20),
+                                decoration: const BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(12),
+                                  ),
+                                  color: Color(0xffA6F4E7),
                                 ),
-                                color: Color(0xffA6F4E7),
-                              ),
-                              child: Image.asset(
-                                "assets/images/auth/homework.png",
-                                height: 60,
-                                width: 60,
+                                child: Image.asset(
+                                  "assets/images/auth/homework.png",
+                                  height: 60,
+                                  width: 60,
+                                ),
                               ),
                             ),
                             const Padding(
@@ -379,23 +401,32 @@ class _StudentLoginState extends State<StudentLogin> {
                     ),
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 9, right: 20),
+                        padding: const EdgeInsets.only(left: 9, right: 20,),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Container(
-                              padding: const EdgeInsets.all(20),
-                              decoration: const BoxDecoration(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(12),
+                            GestureDetector(
+                              onTap:(){
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) =>  const SResult(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.all(20),
+                                decoration: const BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(12),
+                                  ),
+                                  color: Color(0xffA6F4E7),
                                 ),
-                                color: Color(0xffA6F4E7),
-                              ),
-                              child: Image.asset(
-                                "assets/images/auth/result.png",
-                                height: 60,
-                                width: 60,
+                                child: Image.asset(
+                                  "assets/images/auth/result.png",
+                                  height: 60,
+                                  width: 60,
+                                ),
                               ),
                             ),
                             const Padding(
@@ -549,29 +580,39 @@ class _StudentLoginState extends State<StudentLogin> {
                     ],
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(
-                    left: 20,
-                  ),
-                  padding: const EdgeInsets.all(20),
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(12),
+                GestureDetector(
+                  onTap:(){
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) =>  const PayFees(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                      left: 20,
                     ),
-                    color: Color(0xffA6F4E7),
-                  ),
-                  child: Image.asset(
-                    "assets/images/auth/add_co.png",
-                    height: 60,
-                    width: 60,
+                    padding: const EdgeInsets.all(20),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(12),
+                      ),
+                      color: Color(0xffA6F4E7),
+                    ),
+                    child: Image.asset(
+                      "assets/images/auth/paylogi.png",
+                      height: 60,
+                      width: 60,
+                     // color:Colors.deepPurple,
+                    ),
                   ),
                 ),
                 const Padding(
                   padding: EdgeInsets.only(
-                    left: 23,
+                    left: 25,
                   ),
                   child: Text(
-                    "Add Account",
+                    "Pay Fees",
                     style: TextStyle(
                       fontWeight: FontWeight.w400,
                       fontSize: 13,

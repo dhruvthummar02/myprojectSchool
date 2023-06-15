@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FirstR extends StatefulWidget {
-  const FirstR({Key? key}) : super(key: key);
+class SecondR extends StatefulWidget {
+  const SecondR({Key? key}) : super(key: key);
 
   @override
-  State<FirstR> createState() => _FirstRState();
+  State<SecondR> createState() => _SecondRState();
 }
 
-class _FirstRState extends State<FirstR> {
+class _SecondRState extends State<SecondR> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,11 +125,12 @@ class _FirstRState extends State<FirstR> {
               ),
             ),
           ),
-          Center(
-            child: Container(
-              height: 143,
-              width: 324,
-              color: const Color(0xffC4C4C4),
+          Padding(
+            padding: const EdgeInsets.only(left:40,right: 40,),
+            child: Image.asset(
+              "assets/images/auth/ree.jpg",
+              height: 200,
+              width: 300,
             ),
           ),
           Center(
