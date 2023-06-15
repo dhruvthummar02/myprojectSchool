@@ -8,7 +8,7 @@ import 'package:my_project/teacherdas/result.dart';
 import 'package:my_project/teacherdas/solucation.dart';
 
 import 'auth/Chooseoption.dart';
-import 'auth/loginpage.dart';
+import 'auth/students/loginpage.dart';
 import 'auth/pleshScreen.dart';
 import 'auth/students/firstresult.dart';
 import 'auth/students/homework.dart';

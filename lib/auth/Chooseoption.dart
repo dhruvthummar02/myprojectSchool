@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/auth/students/loginpage.dart';
+
+import '../teacherdas/tsginup.dart';
 
 class ChooseOption extends StatefulWidget {
   const ChooseOption({Key? key}) : super(key: key);
@@ -66,22 +69,31 @@ class _ChooseOptionState extends State<ChooseOption> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Container(
-                        margin: const EdgeInsets.only(
-                          left: 49,
-                          top: 51,
-                        ),
-                        padding: const EdgeInsets.all(20),
-                        decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const LoginPageS(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(
+                            left: 49,
+                            top: 51,
                           ),
-                          color: Color(0xff0C46C4),
-                        ),
-                        child: Image.asset(
-                          "assets/images/auth/student.png",
-                          height: 60,
-                          width: 60,
+                          padding: const EdgeInsets.all(20),
+                          decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20),
+                            ),
+                            color: Color(0xff0C46C4),
+                          ),
+                          child: Image.asset(
+                            "assets/images/auth/student.png",
+                            height: 60,
+                            width: 60,
+                          ),
                         ),
                       ),
                       const Padding(
@@ -102,22 +114,31 @@ class _ChooseOptionState extends State<ChooseOption> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Container(
-                        margin: const EdgeInsets.only(
-                          left: 49,
-                          top: 51,
-                        ),
-                        padding: const EdgeInsets.all(20),
-                        decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(20),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const LoginPageT(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(
+                            left: 49,
+                            top: 51,
                           ),
-                          color: Color(0xff0C46C4),
-                        ),
-                        child: Image.asset(
-                          "assets/images/auth/techer.png",
-                          height: 60,
-                          width: 60,
+                          padding: const EdgeInsets.all(20),
+                          decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(20),
+                            ),
+                            color: Color(0xff0C46C4),
+                          ),
+                          child: Image.asset(
+                            "assets/images/auth/techer.png",
+                            height: 60,
+                            width: 60,
+                          ),
                         ),
                       ),
                       const Padding(

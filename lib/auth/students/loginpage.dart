@@ -1,15 +1,16 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:my_project/auth/students/student_login.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class LoginPageS extends StatefulWidget {
+  const LoginPageS({Key? key}) : super(key: key);
 
   @override
-  State<LoginPage> createState() => _LoginPAgeState();
+  State<LoginPageS> createState() => _LoginPAgeState();
 }
 
-class _LoginPAgeState extends State<LoginPage> {
+class _LoginPAgeState extends State<LoginPageS> {
   String userName = "";
   String password = "";
 
@@ -185,11 +186,11 @@ class _LoginPAgeState extends State<LoginPage> {
 
                             log("Email : ${userController.text}");
                             log("Password : ${passwordController.text}");
-                            /*Navigator.of(context).push(
+                            Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => const Enterpin(),
+                                builder: (context) => const StudentLogin(),
                               ),
-                            );*/
+                            );
                           },
                           child: Container(
                             margin: const EdgeInsets.only(
